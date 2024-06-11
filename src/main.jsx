@@ -11,7 +11,16 @@ const colors = {
   },
 };
 
-const theme = extendTheme({ colors });
+const theme = extendTheme({
+  colors,
+  styles: {
+    global: {
+      body: {
+        bg: "#f3f2ef", // Financial Times background color
+      },
+    },
+  },
+});
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
